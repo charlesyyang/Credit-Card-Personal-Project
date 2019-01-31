@@ -1,0 +1,33 @@
+@author Charles Yang
+
+Hi! For my code I decided to use Java, which is a language I have started to learn
+this semester of school. Java is Object Oriented which made it the clearest choice to 
+use for this challenge. Many of the methods and instances have comments included explaining
+how and why I used them. 
+
+1.Design Decisions
+
+To read a text file for the input, I implemented a Scanner, BufferedReader, and a Reader to 
+parse through the different lines. 
+
+The Provider class takes in a text file or a string based on the schematics defined for the 
+challenge. If the line begins with "Add", it takes the name, account number, and credit limit 
+and creates a new CreditCardAcc. It then maps the name to the new account in a Treemap, which
+later allows the output to be returned in alphabetcal order. Provider also outputs the final 
+summary for all the people with the accounts afterwards.
+
+The CreditCardAcc class keeps track of the variables that are stored within each user's account.
+It also contains the methods for mutating the balance of the account based on Credit and Charge.
+
+I could not find a library that implements a Luhn 10 checker for the credit card numbers so I 
+copied a completed code and gave credit in the comment for the method (as allowed by the
+challenge).
+
+2. Compiling and Running the program
+
+The code compiles using the terminal and the command "javac Provider.javac"
+The test is stored in tests.txt which can be run by using "java Provider" then inputing
+"tests.txt". Or just "java Provider tests.txt" since I wrote the code to accept a String[] arg
+or a System.In input. The output will be the output asked for in the challenge.
+
+Thank you!
